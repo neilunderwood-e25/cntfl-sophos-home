@@ -12,4 +12,5 @@ export const HeroFrontendComponent = {
 
 export const BannerFrontendComponent = {
   HeroBanner: "Hero Banner",
+  BannerWithPricingCard: "Banner with pricing card",
 } as const;

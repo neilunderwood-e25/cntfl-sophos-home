@@ -10,6 +10,27 @@ export type BannerButton = {
   openInNewTab?: boolean | null;
 };
 
+/** Contentful `PricingPlan` as queried in the Banner fragment. */
+export type BannerPricingPlan = {
+  sys?: Sys;
+  label?: string | null;
+  price?: string | null;
+  originalPrice?: string | null;
+  savingsLabel?: string | null;
+  buyUrl?: string | null;
+};
+
+/** Contentful `PricingCard` as queried in the Banner fragment. */
+export type BannerPricingCard = {
+  sys?: Sys;
+  badge?: string | null;
+  productName?: string | null;
+  plans?: BannerPricingPlan[] | null;
+  buyButtonLabel?: string | null;
+  disclaimer?: string | null;
+  secondaryButton?: BannerButton | null;
+};
+
 /** Normalized data shared by the Banner family's visual variants. */
 export type BannerSection = {
   __typename: typeof SectionTypename.Banner;
@@ -20,4 +41,5 @@ export type BannerSection = {
   image?: CfAsset | null;
   buttons?: BannerButton[] | null;
   buttonNote?: string | null;
+  pricingCard?: BannerPricingCard | null;
 };

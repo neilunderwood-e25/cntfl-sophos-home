@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "page": {
-    "probeUrl": "/banner/hero-banner"
+    "probeUrl": "/banner/banner-with-pricing-card"
   },
   "families": [
     {
@@ -14,7 +14,8 @@
         { "kind": "scalar", "id": "description", "type": "string" },
         { "kind": "delivery", "id": "image" },
         { "kind": "delivery", "id": "buttons" },
-        { "kind": "scalar", "id": "buttonNote", "type": "string" }
+        { "kind": "scalar", "id": "buttonNote", "type": "string" },
+        { "kind": "delivery", "id": "pricingCard" }
       ],
       "variants": [
         {
@@ -22,6 +23,12 @@
           "value": "Hero Banner",
           "folder": "heroBanner",
           "export": "HeroBanner"
+        },
+        {
+          "key": "BannerWithPricingCard",
+          "value": "Banner with pricing card",
+          "folder": "bannerWithPricingCard",
+          "export": "BannerWithPricingCard"
         }
       ]
     }

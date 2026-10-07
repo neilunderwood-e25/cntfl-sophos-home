@@ -5,6 +5,7 @@ import { gql } from "@/lib/cms/graphql";
  * Keep the union of fields consumed by the family's built variants.
  *
  * `buttons` is a short CTA list, so it stays inline with a small `limit:`.
+ * `pricingCard.plans` is likewise a handful of plans per card.
  */
 export const BANNER_FRAGMENT = gql`
   fragment BannerFields on Banner {
@@ -32,6 +33,35 @@ export const BANNER_FRAGMENT = gql`
       }
     }
     buttonNote
+    pricingCard {
+      sys {
+        id
+      }
+      badge
+      productName
+      plansCollection(limit: 5) {
+        items {
+          sys {
+            id
+          }
+          label
+          price
+          originalPrice
+          savingsLabel
+          buyUrl
+        }
+      }
+      buyButtonLabel
+      disclaimer
+      secondaryButton {
+        sys {
+          id
+        }
+        label
+        url
+        openInNewTab
+      }
+    }
   }
 `;
 
