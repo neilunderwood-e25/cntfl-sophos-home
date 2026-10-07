@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "page": {
+    "probeUrl": "/banner/hero-banner"
+  },
+  "families": [
+    {
+      "model": "banner",
+      "typename": "Banner",
+      "name": "Banner",
+      "folder": "banner",
+      "fields": [
+        { "kind": "scalar", "id": "heading", "type": "string" },
+        { "kind": "scalar", "id": "description", "type": "string" },
+        { "kind": "delivery", "id": "image" },
+        { "kind": "delivery", "id": "buttons" },
+        { "kind": "scalar", "id": "buttonNote", "type": "string" }
+      ],
+      "variants": [
+        {
+          "key": "HeroBanner",
+          "value": "Hero Banner",
+          "folder": "heroBanner",
+          "export": "HeroBanner"
+        }
+      ]
+    }
+  ]
+}

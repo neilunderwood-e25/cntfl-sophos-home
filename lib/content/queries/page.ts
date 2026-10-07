@@ -1,5 +1,5 @@
 import { buildQuery, gql } from "@/lib/cms/graphql";
-import { HERO_FRAGMENTS } from "./fragments/hero-banner";
+import { BANNER_FRAGMENTS } from "./fragments/banner";
 
 /**
  * Main page query.
@@ -31,8 +31,8 @@ const OPERATION = gql`
         sectionsCollection(limit: 30) {
           items {
             __typename
-            ... on HeroBanner {
-              ...HeroFields
+            ... on Banner {
+              ...BannerFields
             }
           }
         }
@@ -41,4 +41,4 @@ const OPERATION = gql`
   }
 `;
 
-export const GET_PAGE_BY_URL = buildQuery(OPERATION, [...HERO_FRAGMENTS]);
+export const GET_PAGE_BY_URL = buildQuery(OPERATION, [...BANNER_FRAGMENTS]);
