@@ -2,7 +2,7 @@
   "version": 1,
   "specHash": "34154d505986625ba84b3ee9edf25a8be4d1dc98e739376ffc4553a19da38641",
   "files": {
-    "styles/globals.css": "d06908b43cf6237b7f4716bc9dc7fcdb9e8f7c0a99e7f0539ca0069e701fedeb",
+    "styles/globals.css": "f22e36d68ebebd2c0f473819d732a9e36c3dca4c12dd8c10d269b9c4440af90d",
     "styles/util/_colors.css": "115f08275d4c2d12e8e246e2692403aa2de2402c18ca7ec7c861a5dfc8cd378d",
     "styles/util/_fonts.css": "4294903f3dcb379d96e39f204d9f7c34b583aadef9732717cebee7b02b785157",
     "styles/util/_variables.css": "e8cd648bc1c3e49c9fd92e52d2f41c063ba291df23cb12914d19f6f7019d9bd0",
@@ -25,10 +25,16 @@
     ".foundry/foundation-inputs/icon-sources/chevron-down-blue.svg": "1f4715fbb0bf9c2b1a003eb2eeb2fa99bda2741a7e48fa64ca287531331311b9",
     ".foundry/foundation-inputs/icon-sources/circle-check-blue.svg": "031983d6bcf9ffdbcf95fb1a8e32f1ec0baeed8b90ed929be8793ea65dd36fbb",
     "public/assets/icons/sprite.svg": "cd242aff8d8ef5dc895d952c9eda3f99ec64089c179cd60060717454a5e1d541",
-    "app/foundry-fonts.ts": "004214bd31081507a754afa15d972f6fc51ad0338cb66ced9fddf2d3d958a8ab"
+    "app/foundry-fonts.ts": "004214bd31081507a754afa15d972f6fc51ad0338cb66ced9fddf2d3d958a8ab",
+    "components/ui/Container.tsx": "b66d4db7cb938a6fe5878a0bfd3dfc6a2856ea3cf4c7ac52c249cd1a188cea49",
+    "styles/util/_container.css": "6eaad4eb4bcc5dd61cbe560af90448554a26784c00c9e333110377c2285cde03",
+    ".foundry/container.json": "54651d7bb027861d5f4b3480b82d621671286a0c541aa12583a9f0086f2afd12",
+    "app/container/page.tsx": "062cf1127a94fa7ba4b9e68695289728c65e9cb43a2dbeeb60013595b5997f66"
   },
   "importHash": "68705c6728f366a86e232744c6de4566b97c3d44ce9111279576041349cc582c",
   "integrationHash": "bc89605c95aebd71584984d76bfc01dddc2b06febcd3c91ed8b5a87f2b37d9b8",
+  "containerImportHash": "ca8429c69bb712f0472928fc17d264930e8727cfc303a25490c7c4e624f76f9e",
+  "containerBreakpoints": "{\"sm\":576,\"md\":768,\"lg\":992,\"xl\":1200,\"xxl\":1440}",
   "fontLayout": {
     "importHash": "e2bc78f506fd0bebb284fd068c1d50e484370821d68d5cac3863b2f7f9fa6f97",
     "attributeHash": "d8b168a7df7e5bfa8cc099db5d40bcb9e9a079e08c4543e55683441f6f76a9df"

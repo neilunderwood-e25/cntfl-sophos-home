@@ -8,6 +8,9 @@
 @import "./util/_buttons.css";
 @import "./util/_icons.css";
 @import "./util/_utility.css";
+/* foundry:container:start */
+@import "./util/_container.css";
+/* foundry:container:end */
 
 @source "safelist-tailwindcss.txt";
 
