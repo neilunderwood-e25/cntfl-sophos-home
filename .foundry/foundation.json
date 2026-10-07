@@ -1,0 +1,1149 @@
+{
+  "schemaVersion": 2,
+  "stylingPattern": "eight25-corporate-v1",
+  "name": "Sophos",
+  "reference": {
+    "fileKey": "ft3rwttKWkfLyvvwsKxZ9F",
+    "nodeId": "73:2982"
+  },
+  "generation": {
+    "spacing": {
+      "source": "default",
+      "scale": "e25-spacing-v1",
+      "reason": "variables-unavailable"
+    },
+    "requestedReference": {
+      "fileKey": "ft3rwttKWkfLyvvwsKxZ9F",
+      "nodeId": "73:2982"
+    },
+    "customFonts": []
+  },
+  "notes": [
+    "Color naming: only #005BC8 (home.sophos.com/Science Blue) and #696A6B (home.sophos.com/Nevada) have descriptive names in the colorNames evidence. All other local paint styles are named after their hex value (e.g. '#FF8000'). Those labels keep the exact style name, and the ids are descriptive fallbacks (cyan, orange, gray-100, and so on). #D8EFFC is a documented swatch (74:3389) with no paint style.",
+    "blue-hover (#006AD1) and orange-hover (#FFA50D) are not board swatches. They were measured from the hover specimens of the primary (73:3259) and purchase (73:3261) buttons and added so the hover states can use palette properties.",
+    "Typography: the ids are the leaf of each 'Web/<name>' style name, normalized (Web/Title 1 -> title-1), and the labels keep the exact Figma style names. Line heights come from FONT_SIZE_% values and are kept as percent. Letter spacing is pixel value / font size in em. Feature flags are taken from the specimens: Lexend Exa styles use ss01 on and liga off, and Inter styles use ss04 on.",
+    "Elements: h1-h6 map to Title 1-6, following the board's numbered title hierarchy. p is null because three body styles exist (Large, Medium and Small) and no default is specified.",
+    "Button families: secondary (white pill, 25/8 padding, Web/Button 16px, hover fill #F0F9FE), primary (Science Blue pill, 30/10 padding, 13px Button Small metrics, hover fill #006AD1), purchase (orange pill, 30/10 padding, Web/Button 16px, hover fill #FFA50D), outline (transparent pill with a 1px Science Blue border, 30/10 padding, 16px; the documented hover 77:3455 is identical to the default) and link (cta_text: Web/Button Link 14px text plus a 16x16.5 circled-chevron icon with a 10px gap; on hover the text and icon turn black). Primary and purchase are separate families because their font size and height differ (13px/33px vs 16px/36px), not only their color. All pills use radius 30. The fixed 140px width of the primary specimen comes from the sample text and was not encoded.",
+    "The purchase specimen label overrides part of the text with a strikethrough ('$59.99'). This is sample price content and is not encoded as a button style. The secondary label fill was measured as #015BC8 and is mapped to science-blue #005BC8.",
+    "Text-only buttons use gap 0 because the specimens have no icon child (Figma itemSpacing is 10). The link button's default and hover icons are separate assets because the stroke and glyph color change from #005BC8 to #000000. The blue circled-chevron in the link (73:3253) has the same glyph and paint as the icon-row specimen 73:3295, so that export is reused.",
+    "Radii, breakpoints and container use the supplied defaults; the observed radii are 5 for swatches, 8 for the icon circle and 30 for button pills. Spacing was copied from spacingEvidence (default e25 scale; no Figma variables were available). No mobile sizes are documented.",
+    "Excluded: the gray board background, the presentation-only Inter labels, the Lexend CSS-annotation text and the decorative separator lines. The eight25 credit (73:2989, an image fill) is included only as brand artwork. 73:3299 is a white chevron-down (same shape as 73:3301) that is invisible on the white icon row.",
+    "The host exports each item in labeled icon/logo rows, including unnamed vectors. Button paints are read from the mapped Figma states; empty fills stay transparent.",
+    "Styles use the selected breakpoint system. Generate the E25 padded Container separately after applying the style guide. Google families use next/font/google; custom families use the attached files.",
+    "Figma variables could not be read. Using the default 30-token spacing scale and its spacing safelist."
+  ],
+  "colors": [
+    {
+      "id": "home-sophos-com-science-blue",
+      "label": "home.sophos.com/Science Blue",
+      "value": "#005BC8"
+    },
+    {
+      "id": "cyan",
+      "label": "#0AB6D4",
+      "value": "#0AB6D4"
+    },
+    {
+      "id": "orange",
+      "label": "#FF8000",
+      "value": "#FF8000"
+    },
+    {
+      "id": "black",
+      "label": "#000000",
+      "value": "#000000"
+    },
+    {
+      "id": "white",
+      "label": "#FFFFFF",
+      "value": "#FFFFFF"
+    },
+    {
+      "id": "gray-100",
+      "label": "#F0F2F4",
+      "value": "#F0F2F4"
+    },
+    {
+      "id": "blue-50",
+      "label": "#F0F9FE",
+      "value": "#F0F9FE"
+    },
+    {
+      "id": "gray-200",
+      "label": "#DADCE0",
+      "value": "#DADCE0"
+    },
+    {
+      "id": "blue-100",
+      "label": "#D8EFFC",
+      "value": "#D8EFFC"
+    },
+    {
+      "id": "gray-300",
+      "label": "#83868B",
+      "value": "#83868B"
+    },
+    {
+      "id": "gray-400",
+      "label": "#777A7D",
+      "value": "#777A7D"
+    },
+    {
+      "id": "home-sophos-com-nevada",
+      "label": "home.sophos.com/Nevada",
+      "value": "#696A6B"
+    },
+    {
+      "id": "gray-600",
+      "label": "#545556",
+      "value": "#545556"
+    },
+    {
+      "id": "gray-700",
+      "label": "#424344",
+      "value": "#424344"
+    },
+    {
+      "id": "blue-hover",
+      "label": "Primary button hover",
+      "value": "#006AD1"
+    },
+    {
+      "id": "orange-hover",
+      "label": "Purchase button hover",
+      "value": "#FFA50D"
+    }
+  ],
+  "fonts": [
+    {
+      "id": "lexend-exa",
+      "family": "Lexend Exa",
+      "provider": "google",
+      "import": "Lexend_Exa",
+      "weights": [
+        "variable"
+      ],
+      "subsets": [
+        "latin"
+      ]
+    },
+    {
+      "id": "inter",
+      "family": "Inter",
+      "provider": "google",
+      "import": "Inter",
+      "weights": [
+        "variable"
+      ],
+      "subsets": [
+        "latin"
+      ]
+    }
+  ],
+  "typography": [
+    {
+      "id": "web-title-1",
+      "label": "Web/Title 1",
+      "font": "lexend-exa",
+      "size": 54,
+      "weight": 300,
+      "sourceNodeId": "73:3150",
+      "lineHeight": {
+        "unit": "percent",
+        "value": 110
+      },
+      "textDecoration": "none",
+      "fontStyle": "normal",
+      "textCase": "original",
+      "letterSpacing": -0.1,
+      "uppercase": false,
+      "features": [
+        "ss01 1",
+        "liga 0"
+      ]
+    },
+    {
+      "id": "web-title-2",
+      "label": "Web/Title 2",
+      "font": "lexend-exa",
+      "size": 44,
+      "weight": 300,
+      "sourceNodeId": "73:3155",
+      "lineHeight": {
+        "unit": "percent",
+        "value": 110
+      },
+      "textDecoration": "none",
+      "fontStyle": "normal",
+      "textCase": "original",
+      "letterSpacing": -0.1,
+      "uppercase": false,
+      "features": [
+        "ss01 1",
+        "liga 0"
+      ]
+    },
+    {
+      "id": "web-title-3",
+      "label": "Web/Title 3",
+      "font": "lexend-exa",
+      "size": 32,
+      "weight": 300,
+      "sourceNodeId": "73:3160",
+      "lineHeight": {
+        "unit": "percent",
+        "value": 115
+      },
+      "textDecoration": "none",
+      "fontStyle": "normal",
+      "textCase": "original",
+      "letterSpacing": -0.08,
+      "uppercase": false,
+      "features": [
+        "ss01 1",
+        "liga 0"
+      ]
+    },
+    {
+      "id": "web-title-4",
+      "label": "Web/Title 4",
+      "font": "lexend-exa",
+      "size": 24,
+      "weight": 300,
+      "sourceNodeId": "73:3165",
+      "lineHeight": {
+        "unit": "percent",
+        "value": 115
+      },
+      "textDecoration": "none",
+      "fontStyle": "normal",
+      "textCase": "original",
+      "letterSpacing": -0.08,
+      "uppercase": false,
+      "features": [
+        "ss01 1",
+        "liga 0"
+      ]
+    },
+    {
+      "id": "web-title-5",
+      "label": "Web/Title 5",
+      "font": "lexend-exa",
+      "size": 20,
+      "weight": 400,
+      "sourceNodeId": "73:3170",
+      "lineHeight": {
+        "unit": "percent",
+        "value": 110
+      },
+      "textDecoration": "none",
+      "fontStyle": "normal",
+      "textCase": "original",
+      "letterSpacing": -0.08,
+      "uppercase": false,
+      "features": [
+        "ss01 1",
+        "liga 0"
+      ]
+    },
+    {
+      "id": "web-title-6",
+      "label": "Web/Title 6",
+      "font": "lexend-exa",
+      "size": 18,
+      "weight": 400,
+      "sourceNodeId": "73:3175",
+      "lineHeight": {
+        "unit": "percent",
+        "value": 125
+      },
+      "textDecoration": "none",
+      "fontStyle": "normal",
+      "textCase": "original",
+      "letterSpacing": -0.08,
+      "uppercase": false,
+      "features": [
+        "ss01 1",
+        "liga 0"
+      ]
+    },
+    {
+      "id": "web-body-large",
+      "label": "Web/Body Large",
+      "font": "inter",
+      "size": 16,
+      "weight": 400,
+      "sourceNodeId": "73:3180",
+      "lineHeight": {
+        "unit": "percent",
+        "value": 160
+      },
+      "textDecoration": "none",
+      "fontStyle": "normal",
+      "textCase": "original",
+      "letterSpacing": -0.01,
+      "uppercase": false,
+      "features": [
+        "ss04 1"
+      ]
+    },
+    {
+      "id": "web-body-medium",
+      "label": "Web/Body Medium",
+      "font": "inter",
+      "size": 14,
+      "weight": 400,
+      "sourceNodeId": "73:3185",
+      "lineHeight": {
+        "unit": "percent",
+        "value": 180
+      },
+      "textDecoration": "none",
+      "fontStyle": "normal",
+      "textCase": "original",
+      "letterSpacing": 0.02,
+      "uppercase": false,
+      "features": [
+        "ss04 1"
+      ]
+    },
+    {
+      "id": "web-body-small",
+      "label": "Web/Body Small",
+      "font": "inter",
+      "size": 12,
+      "weight": 400,
+      "sourceNodeId": "73:3190",
+      "lineHeight": {
+        "unit": "percent",
+        "value": 160
+      },
+      "textDecoration": "none",
+      "fontStyle": "normal",
+      "textCase": "original",
+      "letterSpacing": -0.01,
+      "uppercase": false,
+      "features": [
+        "ss04 1"
+      ]
+    },
+    {
+      "id": "web-tag-large",
+      "label": "Web/Tag Large",
+      "font": "lexend-exa",
+      "size": 16,
+      "weight": 500,
+      "sourceNodeId": "73:3195",
+      "lineHeight": {
+        "unit": "percent",
+        "value": 125
+      },
+      "textDecoration": "none",
+      "fontStyle": "normal",
+      "textCase": "upper",
+      "letterSpacing": -0.06,
+      "uppercase": true,
+      "features": [
+        "ss01 1",
+        "liga 0"
+      ]
+    },
+    {
+      "id": "web-tag-small",
+      "label": "Web/Tag Small",
+      "font": "lexend-exa",
+      "size": 12,
+      "weight": 500,
+      "sourceNodeId": "73:3200",
+      "lineHeight": {
+        "unit": "percent",
+        "value": 110
+      },
+      "textDecoration": "none",
+      "fontStyle": "normal",
+      "textCase": "upper",
+      "letterSpacing": 0.07,
+      "uppercase": true,
+      "features": [
+        "ss01 1",
+        "liga 0"
+      ]
+    },
+    {
+      "id": "web-tag-x-small",
+      "label": "Web/Tag X Small",
+      "font": "lexend-exa",
+      "size": 12,
+      "weight": 500,
+      "sourceNodeId": "73:3205",
+      "lineHeight": {
+        "unit": "percent",
+        "value": 100
+      },
+      "textDecoration": "none",
+      "fontStyle": "normal",
+      "textCase": "original",
+      "letterSpacing": -0.08,
+      "uppercase": false,
+      "features": [
+        "ss01 1",
+        "liga 0"
+      ]
+    },
+    {
+      "id": "web-tag-xxsmall",
+      "label": "Web/Tag XXSmall",
+      "font": "lexend-exa",
+      "size": 10,
+      "weight": 500,
+      "sourceNodeId": "73:3210",
+      "lineHeight": {
+        "unit": "percent",
+        "value": 110
+      },
+      "textDecoration": "none",
+      "fontStyle": "normal",
+      "textCase": "upper",
+      "letterSpacing": 0,
+      "uppercase": true,
+      "features": [
+        "ss01 1",
+        "liga 0"
+      ]
+    },
+    {
+      "id": "web-button",
+      "label": "Web/Button",
+      "font": "inter",
+      "size": 16,
+      "weight": 700,
+      "sourceNodeId": "73:3215",
+      "lineHeight": {
+        "unit": "percent",
+        "value": 100
+      },
+      "textDecoration": "none",
+      "fontStyle": "normal",
+      "textCase": "original",
+      "letterSpacing": -0.01,
+      "uppercase": false,
+      "features": [
+        "ss04 1"
+      ]
+    },
+    {
+      "id": "web-button-small",
+      "label": "Web/Button Small",
+      "font": "inter",
+      "size": 13,
+      "weight": 700,
+      "sourceNodeId": "73:3220",
+      "lineHeight": {
+        "unit": "percent",
+        "value": 100
+      },
+      "textDecoration": "none",
+      "fontStyle": "normal",
+      "textCase": "original",
+      "letterSpacing": -0.01,
+      "uppercase": false,
+      "features": [
+        "ss04 1"
+      ]
+    },
+    {
+      "id": "web-button-link",
+      "label": "Web/Button Link",
+      "font": "inter",
+      "size": 14,
+      "weight": 700,
+      "sourceNodeId": "73:3225",
+      "lineHeight": {
+        "unit": "percent",
+        "value": 100
+      },
+      "textDecoration": "none",
+      "fontStyle": "normal",
+      "textCase": "original",
+      "letterSpacing": -0.01,
+      "uppercase": false,
+      "features": [
+        "ss04 1"
+      ]
+    },
+    {
+      "id": "web-navigation-link-large",
+      "label": "Web/Navigation Link Large",
+      "font": "inter",
+      "size": 16,
+      "weight": 400,
+      "sourceNodeId": "73:3230",
+      "lineHeight": {
+        "unit": "percent",
+        "value": 120.000008
+      },
+      "textDecoration": "none",
+      "fontStyle": "normal",
+      "textCase": "original",
+      "letterSpacing": 0,
+      "uppercase": false,
+      "features": [
+        "ss04 1"
+      ]
+    },
+    {
+      "id": "web-navigation-link-small",
+      "label": "Web/Navigation Link Small",
+      "font": "inter",
+      "size": 12,
+      "weight": 400,
+      "sourceNodeId": "73:3235",
+      "lineHeight": {
+        "unit": "percent",
+        "value": 160
+      },
+      "textDecoration": "none",
+      "fontStyle": "normal",
+      "textCase": "original",
+      "letterSpacing": -0.01,
+      "uppercase": false,
+      "features": [
+        "ss04 1"
+      ]
+    }
+  ],
+  "fontSizes": [
+    {
+      "id": "size-10",
+      "value": 10
+    },
+    {
+      "id": "size-12",
+      "value": 12
+    },
+    {
+      "id": "size-13",
+      "value": 13
+    },
+    {
+      "id": "size-14",
+      "value": 14
+    },
+    {
+      "id": "size-16",
+      "value": 16
+    },
+    {
+      "id": "size-18",
+      "value": 18
+    },
+    {
+      "id": "size-20",
+      "value": 20
+    },
+    {
+      "id": "size-24",
+      "value": 24
+    },
+    {
+      "id": "size-32",
+      "value": 32
+    },
+    {
+      "id": "size-44",
+      "value": 44
+    },
+    {
+      "id": "size-54",
+      "value": 54
+    }
+  ],
+  "elements": {
+    "h1": "web-title-1",
+    "h2": "web-title-2",
+    "h3": "web-title-3",
+    "h4": "web-title-4",
+    "h5": "web-title-5",
+    "h6": "web-title-6"
+  },
+  "spacing": [
+    {
+      "id": "0",
+      "value": 0
+    },
+    {
+      "id": "5xs",
+      "value": 5
+    },
+    {
+      "id": "4xs",
+      "value": 10
+    },
+    {
+      "id": "3xs",
+      "value": 15
+    },
+    {
+      "id": "2xs",
+      "value": 20
+    },
+    {
+      "id": "xs",
+      "value": 25
+    },
+    {
+      "id": "s",
+      "value": 30
+    },
+    {
+      "id": "m",
+      "value": 40
+    },
+    {
+      "id": "l",
+      "value": 50
+    },
+    {
+      "id": "xl",
+      "value": 60
+    },
+    {
+      "id": "2xl",
+      "value": 70
+    },
+    {
+      "id": "3xl",
+      "value": 80
+    },
+    {
+      "id": "4xl",
+      "value": 90
+    },
+    {
+      "id": "5xl",
+      "value": 100
+    },
+    {
+      "id": "6xl",
+      "value": 110
+    },
+    {
+      "id": "7xl",
+      "value": 120
+    },
+    {
+      "id": "8xl",
+      "value": 130
+    },
+    {
+      "id": "9xl",
+      "value": 140
+    },
+    {
+      "id": "10xl",
+      "value": 150
+    },
+    {
+      "id": "11xl",
+      "value": 160
+    },
+    {
+      "id": "12xl",
+      "value": 170
+    },
+    {
+      "id": "13xl",
+      "value": 180
+    },
+    {
+      "id": "14xl",
+      "value": 190
+    },
+    {
+      "id": "15xl",
+      "value": 200
+    },
+    {
+      "id": "16xl",
+      "value": 210
+    },
+    {
+      "id": "17xl",
+      "value": 220
+    },
+    {
+      "id": "18xl",
+      "value": 230
+    },
+    {
+      "id": "19xl",
+      "value": 240
+    },
+    {
+      "id": "20xl",
+      "value": 250
+    },
+    {
+      "id": "21xl",
+      "value": 260
+    }
+  ],
+  "radii": [
+    {
+      "id": "none",
+      "value": 0
+    },
+    {
+      "id": "xs",
+      "value": 5
+    },
+    {
+      "id": "s",
+      "value": 10
+    },
+    {
+      "id": "l",
+      "value": 30
+    }
+  ],
+  "breakpoints": {
+    "sm": 576,
+    "md": 768,
+    "lg": 992,
+    "xl": 1200,
+    "xxl": 1440
+  },
+  "container": {
+    "maxWidths": {
+      "md": 720,
+      "lg": 960,
+      "xl": 1440
+    },
+    "gutters": {
+      "mobile": 20,
+      "desktop": 80
+    },
+    "types": []
+  },
+  "semantics": {
+    "bodyFont": "inter",
+    "background": "white",
+    "foreground": "black",
+    "focus": "home-sophos-com-science-blue"
+  },
+  "assets": [
+    {
+      "id": "sophos-home-logo",
+      "label": "Sophos Home logo (white)",
+      "source": "assets/sophos-home-logo.svg",
+      "width": 342,
+      "height": 30,
+      "group": "logo"
+    },
+    {
+      "id": "favicon",
+      "label": "Sophos Home favicon",
+      "source": "assets/favicon.svg",
+      "width": 32,
+      "height": 32,
+      "group": "logo"
+    },
+    {
+      "id": "eight25-credit",
+      "label": "eight25 credit",
+      "source": "assets/eight25-credit.svg",
+      "width": 214,
+      "height": 79,
+      "group": "brand"
+    },
+    {
+      "id": "circle-chevron-blue",
+      "label": "Circled chevron right (Science Blue)",
+      "source": "assets/circle-chevron-blue.svg",
+      "width": 16,
+      "height": 17,
+      "group": "icon"
+    },
+    {
+      "id": "circle-chevron-black",
+      "label": "Circled chevron right (black)",
+      "source": "assets/circle-chevron-black.svg",
+      "width": 16,
+      "height": 17,
+      "group": "icon"
+    },
+    {
+      "id": "chevron-down-gray",
+      "label": "Chevron down (Nevada gray)",
+      "source": "assets/chevron-down-gray.svg",
+      "width": 10,
+      "height": 7,
+      "group": "icon"
+    },
+    {
+      "id": "chevron-down-white",
+      "label": "Chevron down (white)",
+      "source": "assets/chevron-down-white.svg",
+      "width": 17,
+      "height": 11,
+      "group": "icon"
+    },
+    {
+      "id": "check-blue",
+      "label": "Checkmark (Science Blue)",
+      "source": "assets/check-blue.svg",
+      "width": 14,
+      "height": 12,
+      "group": "icon"
+    },
+    {
+      "id": "chevron-down-blue",
+      "label": "Chevron down (Science Blue)",
+      "source": "assets/chevron-down-blue.svg",
+      "width": 17,
+      "height": 11,
+      "group": "icon"
+    },
+    {
+      "id": "circle-check-blue",
+      "label": "Circle checkmark (Science Blue)",
+      "source": "assets/circle-check-blue.svg",
+      "width": 24,
+      "height": 24,
+      "group": "icon"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "secondary",
+      "family": "secondary",
+      "colorway": "white",
+      "label": "Secondary",
+      "text": "Free Trial",
+      "background": "#FFFFFF",
+      "foreground": "#015BC8",
+      "hoverBackground": "#F0F9FE",
+      "hoverForeground": "#015BC8",
+      "border": "transparent",
+      "size": 16,
+      "paddingX": 25,
+      "paddingY": 8,
+      "radius": 30,
+      "presentation": {
+        "kind": "text",
+        "font": "inter",
+        "weight": 700,
+        "lineHeight": 1,
+        "letterSpacing": -0.01,
+        "default": {
+          "height": 32,
+          "gap": 0,
+          "background": "#FFFFFF",
+          "foreground": "#005BC8",
+          "paddingX": 25,
+          "paddingY": 8,
+          "radius": 30,
+          "label": {
+            "background": "transparent",
+            "paddingTop": 0,
+            "paddingRight": 0,
+            "paddingBottom": 0,
+            "paddingLeft": 0,
+            "radius": 0
+          },
+          "icon": null,
+          "highlight": null,
+          "underline": null
+        },
+        "hover": {
+          "height": 32,
+          "gap": 0,
+          "background": "#F0F9FE",
+          "foreground": "#005BC8",
+          "paddingX": 25,
+          "paddingY": 8,
+          "radius": 30,
+          "label": {
+            "background": "transparent",
+            "paddingTop": 0,
+            "paddingRight": 0,
+            "paddingBottom": 0,
+            "paddingLeft": 0,
+            "radius": 0
+          },
+          "icon": null,
+          "highlight": null,
+          "underline": null
+        }
+      }
+    },
+    {
+      "id": "primary",
+      "family": "primary",
+      "colorway": "science-blue",
+      "label": "Primary",
+      "text": "Free Trial",
+      "background": "#005BC8",
+      "foreground": "#FFFFFF",
+      "hoverBackground": "#006AD1",
+      "hoverForeground": "#FFFFFF",
+      "border": "transparent",
+      "size": 13,
+      "paddingX": 30,
+      "paddingY": 10,
+      "radius": 30,
+      "presentation": {
+        "kind": "text",
+        "font": "inter",
+        "weight": 700,
+        "lineHeight": 1,
+        "letterSpacing": -0.01,
+        "default": {
+          "height": 33,
+          "gap": 0,
+          "background": "#005BC8",
+          "foreground": "#FFFFFF",
+          "paddingX": 30,
+          "paddingY": 10,
+          "radius": 30,
+          "label": {
+            "background": "transparent",
+            "paddingTop": 0,
+            "paddingRight": 0,
+            "paddingBottom": 0,
+            "paddingLeft": 0,
+            "radius": 0
+          },
+          "icon": null,
+          "highlight": null,
+          "underline": null
+        },
+        "hover": {
+          "height": 33,
+          "gap": 0,
+          "background": "#006AD1",
+          "foreground": "#FFFFFF",
+          "paddingX": 30,
+          "paddingY": 10,
+          "radius": 30,
+          "label": {
+            "background": "transparent",
+            "paddingTop": 0,
+            "paddingRight": 0,
+            "paddingBottom": 0,
+            "paddingLeft": 0,
+            "radius": 0
+          },
+          "icon": null,
+          "highlight": null,
+          "underline": null
+        }
+      }
+    },
+    {
+      "id": "purchase",
+      "family": "purchase",
+      "colorway": "orange",
+      "label": "Purchase",
+      "text": "Buy Now - $59.99 $44.99",
+      "background": "#FF8000",
+      "foreground": "#FFFFFF",
+      "hoverBackground": "#FFA50D",
+      "hoverForeground": "#FFFFFF",
+      "border": "transparent",
+      "size": 16,
+      "paddingX": 30,
+      "paddingY": 10,
+      "radius": 30,
+      "presentation": {
+        "kind": "text",
+        "font": "inter",
+        "weight": 700,
+        "lineHeight": 1,
+        "letterSpacing": -0.01,
+        "default": {
+          "height": 36,
+          "gap": 0,
+          "background": "#FF8000",
+          "foreground": "#FFFFFF",
+          "paddingX": 30,
+          "paddingY": 10,
+          "radius": 30,
+          "label": {
+            "background": "transparent",
+            "paddingTop": 0,
+            "paddingRight": 0,
+            "paddingBottom": 0,
+            "paddingLeft": 0,
+            "radius": 0
+          },
+          "icon": null,
+          "highlight": null,
+          "underline": null
+        },
+        "hover": {
+          "height": 36,
+          "gap": 0,
+          "background": "#FFA50D",
+          "foreground": "#FFFFFF",
+          "paddingX": 30,
+          "paddingY": 10,
+          "radius": 30,
+          "label": {
+            "background": "transparent",
+            "paddingTop": 0,
+            "paddingRight": 0,
+            "paddingBottom": 0,
+            "paddingLeft": 0,
+            "radius": 0
+          },
+          "icon": null,
+          "highlight": null,
+          "underline": null
+        }
+      }
+    },
+    {
+      "id": "outline",
+      "family": "outline",
+      "colorway": "science-blue",
+      "label": "Outline",
+      "text": "Load More",
+      "background": "transparent",
+      "foreground": "#005BC8",
+      "hoverBackground": "transparent",
+      "hoverForeground": "#005BC8",
+      "border": "#005BC8",
+      "size": 16,
+      "paddingX": 30,
+      "paddingY": 10,
+      "radius": 30,
+      "presentation": {
+        "kind": "text",
+        "font": "inter",
+        "weight": 700,
+        "lineHeight": 1,
+        "letterSpacing": -0.01,
+        "default": {
+          "height": 36,
+          "gap": 0,
+          "background": "transparent",
+          "foreground": "#005BC8",
+          "paddingX": 30,
+          "paddingY": 10,
+          "radius": 30,
+          "label": {
+            "background": "transparent",
+            "paddingTop": 0,
+            "paddingRight": 0,
+            "paddingBottom": 0,
+            "paddingLeft": 0,
+            "radius": 0
+          },
+          "icon": null,
+          "highlight": null,
+          "underline": null
+        },
+        "hover": {
+          "height": 36,
+          "gap": 0,
+          "background": "transparent",
+          "foreground": "#005BC8",
+          "paddingX": 30,
+          "paddingY": 10,
+          "radius": 30,
+          "label": {
+            "background": "transparent",
+            "paddingTop": 0,
+            "paddingRight": 0,
+            "paddingBottom": 0,
+            "paddingLeft": 0,
+            "radius": 0
+          },
+          "icon": null,
+          "highlight": null,
+          "underline": null
+        }
+      }
+    },
+    {
+      "id": "link",
+      "family": "link",
+      "colorway": "science-blue",
+      "label": "Link",
+      "text": "Ad Free Trial",
+      "background": "transparent",
+      "foreground": "#005BC8",
+      "hoverBackground": "transparent",
+      "hoverForeground": "#000000",
+      "border": "transparent",
+      "size": 14,
+      "paddingX": 0,
+      "paddingY": 0,
+      "radius": 0,
+      "presentation": {
+        "kind": "label-icon",
+        "font": "inter",
+        "weight": 700,
+        "lineHeight": 1,
+        "letterSpacing": -0.01,
+        "default": {
+          "height": 16.5,
+          "gap": 10,
+          "background": "transparent",
+          "foreground": "#005BC8",
+          "paddingX": 0,
+          "paddingY": 0,
+          "radius": 0,
+          "label": {
+            "background": "transparent",
+            "paddingTop": 0,
+            "paddingRight": 0,
+            "paddingBottom": 0,
+            "paddingLeft": 0,
+            "radius": 0
+          },
+          "icon": {
+            "asset": "circle-chevron-blue",
+            "width": 16,
+            "height": 16.5,
+            "boxWidth": 16,
+            "boxHeight": 16.5,
+            "background": "transparent",
+            "radius": 8
+          },
+          "highlight": null,
+          "underline": null
+        },
+        "hover": {
+          "height": 16.5,
+          "gap": 10,
+          "background": "transparent",
+          "foreground": "#000000",
+          "paddingX": 0,
+          "paddingY": 0,
+          "radius": 0,
+          "label": {
+            "background": "transparent",
+            "paddingTop": 0,
+            "paddingRight": 0,
+            "paddingBottom": 0,
+            "paddingLeft": 0,
+            "radius": 0
+          },
+          "icon": {
+            "asset": "circle-chevron-black",
+            "width": 16,
+            "height": 16.5,
+            "boxWidth": 16,
+            "boxHeight": 16.5,
+            "background": "transparent",
+            "radius": 8
+          },
+          "highlight": null,
+          "underline": null
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "specHash": "34154d505986625ba84b3ee9edf25a8be4d1dc98e739376ffc4553a19da38641",
+  "files": {
+    "styles/globals.css": "d06908b43cf6237b7f4716bc9dc7fcdb9e8f7c0a99e7f0539ca0069e701fedeb",
+    "styles/util/_colors.css": "115f08275d4c2d12e8e246e2692403aa2de2402c18ca7ec7c861a5dfc8cd378d",
+    "styles/util/_fonts.css": "4294903f3dcb379d96e39f204d9f7c34b583aadef9732717cebee7b02b785157",
+    "styles/util/_variables.css": "e8cd648bc1c3e49c9fd92e52d2f41c063ba291df23cb12914d19f6f7019d9bd0",
+    "styles/util/_utility.css": "111d82c8dd8a74744242acb2855a1092d4bb7a7a30fa851f1979511afbf5771e",
+    "styles/util/_typography.css": "73f7686c457e42be599350dffecc7d638d7e5da7905006ca7507f95a25bb272b",
+    "styles/util/_buttons.css": "1f06ed7e4adc77239adf7886abd393a6a90c43a3f357cfc40b2f1d96dbffdc45",
+    "styles/util/_icons.css": "913304ca3d1a0bfe23943fb367b85e07d38ac266c11d474e44b5582639792fe2",
+    "styles/safelist-tailwindcss.txt": "08e6192a67af6808fe3d47815f241f24abf0427d4f58c1f5d08251f85f8e86e5",
+    "app/styleguide/page.tsx": "87b6c935f57d5c195ef72f7b76eaf2ac7dbe764413686ecb350f0328de16a0cb",
+    "app/styleguide/styleguide.module.css": "7d4c06ff791c9f7d2ba680cfd0389ac91b0fa47d32206bb8215010dfc1218287",
+    ".foundry/foundation.json": "2a0bfc09d759122f0302db32e957cac439e04a00c867a303fc7234a11a118d73",
+    "public/assets/images/sophos-home-logo.svg": "0c326ad1bd5eef36e77495f4da09d7c63dc1743144ff917898032f14e495d92a",
+    "public/assets/images/favicon.svg": "f8521e40cd1cf1be1a3901ca773791830fdcf559c17fbbea10f02f5e13aa4892",
+    "public/assets/images/eight25-credit.svg": "639f2978179388078bd2bbb6fc636bdbfe1a04f18bf5e918813b3dbc350bb88f",
+    ".foundry/foundation-inputs/icon-sources/circle-chevron-blue.svg": "23ad6916a2096a2d4a03a3550f5ead318aa6beb574ae0f32abd86a706d90a021",
+    ".foundry/foundation-inputs/icon-sources/circle-chevron-black.svg": "d72b8d910e8df5789c12c8f4222be8e5ca154981cc94b6459019623fd0989f62",
+    ".foundry/foundation-inputs/icon-sources/chevron-down-gray.svg": "0ebcb6ca3e29b09e0d0d07ccb5dbd7c5e3d5c42e50e53d7ac29d21aff4062012",
+    ".foundry/foundation-inputs/icon-sources/chevron-down-white.svg": "71a50943f45ac68ccb5730fab938e5e8ce462c2b99822552763e181d3919e601",
+    ".foundry/foundation-inputs/icon-sources/check-blue.svg": "d43ec71875e9911381574d17c7f1257b2e6297265d475c026753fdea55839fc9",
+    ".foundry/foundation-inputs/icon-sources/chevron-down-blue.svg": "1f4715fbb0bf9c2b1a003eb2eeb2fa99bda2741a7e48fa64ca287531331311b9",
+    ".foundry/foundation-inputs/icon-sources/circle-check-blue.svg": "031983d6bcf9ffdbcf95fb1a8e32f1ec0baeed8b90ed929be8793ea65dd36fbb",
+    "public/assets/icons/sprite.svg": "cd242aff8d8ef5dc895d952c9eda3f99ec64089c179cd60060717454a5e1d541",
+    "app/foundry-fonts.ts": "004214bd31081507a754afa15d972f6fc51ad0338cb66ced9fddf2d3d958a8ab"
+  },
+  "importHash": "68705c6728f366a86e232744c6de4566b97c3d44ce9111279576041349cc582c",
+  "integrationHash": "bc89605c95aebd71584984d76bfc01dddc2b06febcd3c91ed8b5a87f2b37d9b8",
+  "fontLayout": {
+    "importHash": "e2bc78f506fd0bebb284fd068c1d50e484370821d68d5cac3863b2f7f9fa6f97",
+    "attributeHash": "d8b168a7df7e5bfa8cc099db5d40bcb9e9a079e08c4543e55683441f6f76a9df"
+  }
+}
