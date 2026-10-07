@@ -1,5 +1,6 @@
 import { buildQuery, gql } from "@/lib/cms/graphql";
 import { BANNER_FRAGMENTS } from "./fragments/banner";
+import { CARDS_FRAGMENTS } from "./fragments/cards";
 
 /**
  * Main page query.
@@ -34,6 +35,9 @@ const OPERATION = gql`
             ... on Banner {
               ...BannerFields
             }
+            ... on Cards {
+              ...CardsFields
+            }
           }
         }
       }
@@ -41,4 +45,4 @@ const OPERATION = gql`
   }
 `;
 
-export const GET_PAGE_BY_URL = buildQuery(OPERATION, [...BANNER_FRAGMENTS]);
+export const GET_PAGE_BY_URL = buildQuery(OPERATION, [...BANNER_FRAGMENTS, ...CARDS_FRAGMENTS]);

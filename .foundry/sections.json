@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "page": {
-    "probeUrl": "/banner/hero-banner"
+    "probeUrl": "/cards/card-with-steps"
   },
   "families": [
     {
@@ -22,6 +22,26 @@
           "value": "Hero Banner",
           "folder": "heroBanner",
           "export": "HeroBanner"
+        }
+      ]
+    },
+    {
+      "model": "cards",
+      "typename": "Cards",
+      "name": "Cards",
+      "folder": "cards",
+      "fields": [
+        { "kind": "scalar", "id": "heading", "type": "string" },
+        { "kind": "scalar", "id": "description", "type": "string" },
+        { "kind": "delivery", "id": "cards" },
+        { "kind": "delivery", "id": "buttons" }
+      ],
+      "variants": [
+        {
+          "key": "CardWithSteps",
+          "value": "Card with steps",
+          "folder": "cardWithSteps",
+          "export": "CardWithSteps"
         }
       ]
     }

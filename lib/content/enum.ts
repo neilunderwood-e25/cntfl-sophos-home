@@ -2,6 +2,7 @@
 export const SectionTypename = {
   Hero: "HeroBanner",
   Banner: "Banner",
+  Cards: "Cards",
 } as const;
 
 /** Exact CMS values. Preserve spaces and capitalization in real projects. */
@@ -12,4 +13,8 @@ export const HeroFrontendComponent = {
 
 export const BannerFrontendComponent = {
   HeroBanner: "Hero Banner",
+} as const;
+
+export const CardsFrontendComponent = {
+  CardWithSteps: "Card with steps",
 } as const;
